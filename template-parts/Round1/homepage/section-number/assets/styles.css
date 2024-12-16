@@ -1,0 +1,99 @@
+/* start numbers */
+#numbers {
+  height: 12.6125rem;
+  border-radius: 0.625rem;
+  background: linear-gradient(
+    180deg,
+    rgba(235, 243, 255, 0.92) 0%,
+    rgba(228, 236, 250, 0.92) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#numbers .line__horizontal__numbers {
+  height: 5.5rem;
+  border-left: 1px solid #d9d9d9;
+  margin-left: 2.9rem;
+  margin-right: 6.94rem;
+}
+#numbers .count__numbers {
+  color: var(--text-text-oxford-blue-100-tiitle);
+  font-size: 3.625rem;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: -0.03125rem;
+  display: block;
+  width: fit-content;
+  margin-right: 1.38rem;
+  position: relative;
+  z-index: 5;
+}
+
+#numbers .item__description__for {
+  color: var(--text-text-oxford-blue-54);
+  font-size: var(--font-size-sub1);
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: var(--letter-spacing-sub1-600);
+  width: 7.34038rem;
+  display: block;
+}
+
+#numbers .box__numbers {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#numbers .box__numbers::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 6.70656rem;
+  height: 6.70656rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  transform: translate(-1.94rem, -50%);
+  background: linear-gradient(
+    107deg,
+    rgba(17, 68, 255, 0.4) -59.12%,
+    rgba(250, 250, 250, 0.4) 89.53%
+  );
+}
+
+@media screen and (max-width: 639.9px) {
+  #numbers {
+    flex-direction: column;
+    height: fit-content;
+    padding: 4.62rem 1.25rem 4.62rem 3.19rem;
+    align-items: start;
+  }
+
+  #numbers .line__horizontal__numbers {
+    height: 6.5rem;
+    border: none;
+  }
+
+  #numbers .count__numbers {
+    font-size: var(--font-size-H1);
+	  line-height: 120%;
+  }
+
+  #numbers .box__numbers div {
+    display: flex;
+    align-items: center;
+  }
+
+  #numbers .item__description__for {
+    width: fit-content;
+    font-size: var(--font-size-sub1);
+    letter-spacing: 0.03125rem;
+	color:  var(--Text-Text-Oxford-Blue-72-text-2);
+  }
+  #numbers .item__description__for + span {
+    text-transform: lowercase;
+    padding-left: 0.3rem;
+  }
+}

@@ -4,16 +4,27 @@ html {
 
 .header__container {
     width: 100%;
-    height: 6.5rem;
+    height: 5rem;
     position: fixed;
     top: 0;
     left: 0;
-    padding: 1.69rem 6.25rem 1.72rem;
+    z-index: 99;
+	background: transparent;
+	transition: all 0.4s;
+}
+.header__container.active {
+	background: #fff;
+}
+.header__container:hover{
+	background: #fff;
+}
+.header__inner {
+    padding: 1.09rem 0 0.82rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
 }
+
 .header__container .header__left {
     display: flex;
     align-items: center;
@@ -27,6 +38,13 @@ html {
 }
 .header__container .header__right {
     display: flex;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.4s;
+}
+.header__container.active .header__right{
+	opacity: 1;
+	visibility: visible;
 }
 .header__container .header__right a {
     text-wrap: nowrap;
@@ -52,10 +70,16 @@ html {
     opacity: 1;
     visibility: visible;
 }
+
 .header__container .menu__link {
     display: flex;
     align-items: center;
-    color: var(--Text-Text-Gray-blue-6);
+    color: #0C154E;
+	font-size: var(--font-size-sub2);
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: 0.00625rem;
 }
 .header__container .menu__link img {
     margin-left: 0.25rem;
@@ -77,8 +101,11 @@ html {
     box-shadow: 2px 4px 20px 2px rgba(205, 204, 218, 0.4);
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
+
 .header__container .submenu__wrapper {
     display: flex;
+    /* 	display:grid;
+	grid-template-columns: repeat(var(--cols,3),1fr) */
 }
 .header__container .submenu {
     list-style: none;
@@ -190,5 +217,186 @@ html {
 
 .header__container .header__right .header__btn1 {
     margin-right: var(--8);
-    color: var(--Neutral-Grascale-colors-Gray-8);
-} /*# sourceMappingURL=style.css.map */
+    color: var(--Text-Text-Oxford-Blue-100---Body);
+	font-size: var(--font-size-sub1);
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.00938rem;
+}
+.header__container .header__right .header__btn2{
+	color: var(--text-text-oxford-blue-0);
+	font-size: var(--font-size-sub1);
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.00938rem;
+}
+.offcanvas {
+    --bs-offcanvas-width: 100%;
+    --bs-offcanvas-bg: white;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+/*     height: var(--72, 4.5rem); */
+    padding: 1rem 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 99;
+	background: #fff;
+	border-bottom: 1px solid var(--stroke-color-ramp-16, rgba(9, 44, 76, 0.16));
+	box-shadow: 107.727px 262.641px 79.237px 0px rgba(220, 220, 229, 0.00), 69.444px 168.268px 73.005px 0px rgba(220, 220, 229, 0.01), 39.174px 94.373px 61.431px 0px rgba(220, 220, 229, 0.05), 16.916px 41.845px 45.406px 0px rgba(220, 220, 229, 0.09), 4.452px 10.684px 24.929px 0px rgba(220, 220, 229, 0.10);
+/* 	backdrop-filter: blur(8.368901252746582px); */
+}
+
+#header button {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: transparent;
+    outline: transparent;
+    border: transparent;
+}
+
+#header button img {
+    width: 100%;
+    height: 100%;
+}
+#header .header__right,
+.offcanvas__header__right{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#header .header__right > a,
+.offcanvas__header__right > a{
+	color: var(--Text-Text-Oxford-Blue-100---Body);
+	font-size: var(--font-size-sub2);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 160%;
+	letter-spacing: 0.03125rem;
+	text-decoration-line: underline;
+	margin-right: 1rem;
+}
+.header__logo {
+    width: 7.63rem;
+    height: 2.04rem;
+}
+.offcanvas-header{
+	justify-content: space-between;
+}
+#offcanvasRight {
+    --bs-offcanvas-padding-x: 1rem;
+    --bs-offcanvas-padding-y: 1.25rem;
+}
+
+#offcanvasRight .offcanvas-header > img {
+    width: 7.63rem;
+    height: 2.04rem;
+}
+
+#offcanvasRight .offcanvas-header .btn-close {
+    background: transparent;
+    border: transparent;
+    outline: transparent;
+}
+
+#offcanvasRight .offcanvas-header .btn-close img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+#offcanvasRight .offcanvas-body {
+    --bs-offcanvas-padding-y: 0;
+}
+#offcanvasRight .accordion-button {
+    color: var(--Text-Text-Oxford-Blue-100---Body, var(--12-semi, #092c4c));
+    --bs-accordion-btn-padding-x: 0;
+    --bs-accordion-btn-padding-y: var(--10, 0.625rem);
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-btn-icon-width: 2rem;
+    --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+}
+#accordionFlushExample .accordion-body {
+    --bs-accordion-body-padding-x: 0;
+    --bs-accordion-body-padding-y: 0;
+}
+#accordionFlushExample .accordion-body a,
+#flush-collapseThree .accordion-body a {
+    color: var(--Text-Text-Oxford-Blue-72-text-2, rgba(9, 44, 76, 0.72));
+    display: block;
+    padding: 0.5rem 0;
+	margin-bottom: 0.25rem;
+}
+
+#flush-collapseThree .accordion-body a {
+    padding: 0.25rem 0 0.25rem 0.25rem;
+}
+#accordionFlushExample .accordion-body a:last-child{
+	border-top: 1px solid rgba(9, 44, 76, 0.32);
+}
+#flush-collapseThree .accordion-body {
+    --bs-accordion-body-padding-x: 0;
+    --bs-accordion-body-padding-y: 0;
+}
+#accordionFlushChildren .accordion-button {
+    --bs-accordion-btn-padding-x: 0;
+    padding-left: 0.31rem;
+}
+
+.header__bottom {
+    margin-top: var(--32, 2rem);
+    display: flex;
+}
+
+.header__bottom a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.header__contact a,
+.header__socials a {
+    color: var(--Text-Text-Oxford-Blue-87-body-text-1, rgba(9, 44, 76, 0.87));
+}
+
+.header__contact a {
+    margin-top: 0.75rem;
+}
+
+.header__contact,
+.header__socials {
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.75rem;
+}
+.header__social-item {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.62rem;
+    background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.02) 0%,
+            rgba(0, 0, 0, 0.02) 100%
+        ),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.02) 100%),
+        rgba(188, 199, 253, 0.1);
+    border-radius: 0.52rem;
+}
+
+.header__social-item:not(:last-child) {
+    margin-right: 0.5rem;
+}
+.accordion-button--link::after {
+    opacity: 0;
+}

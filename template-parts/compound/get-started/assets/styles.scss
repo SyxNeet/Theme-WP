@@ -28,12 +28,17 @@
         }
     }
     &__image {
-        height: 5.54rem;
-        width: auto;
-        &:not(:last-child) {
-            margin-right: 1.01rem;
-        }
-    }
+		height: 5.54rem;
+		width: auto;
+
+// 		&:not(:last-child) {
+// 			margin-right: 1.01rem;
+// 		}
+
+// 		&:nth-last-child(2) {
+// 			margin-right: 0;
+// 		}
+	}
     &__background {
         position: absolute;
         width: 100%;

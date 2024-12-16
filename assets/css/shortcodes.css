@@ -1,0 +1,206 @@
+.highlight {
+/* 	background: var(--background); */
+	background: #D5EAF9;
+	display: inline-block;
+	border-radius:0.5rem;
+	padding: 2rem 4rem 1.5rem;
+}
+.highlight li {
+/* 	color: var(--color); */
+	margin-bottom: 0.5rem;
+	color: #000
+}
+
+.list-group ul,.list-group ol {
+	padding-left:2rem;/*demo */
+}
+
+.list-group.bullet ul li::marker {
+  color: #3b67ed;
+}
+
+.list-group.hash ul,
+.list-group.check ul{
+	list-style:none;
+}
+.list-group.hash ul li::before {
+	content: "#";
+	margin-right:1rem;
+    color: #3b67ed;
+	font-size:inherit;
+}
+.list-group.check ul li::before {
+	content: "✔";
+	margin-right:1rem;
+    color: #000;
+	font-size:inherit;
+}
+
+.list-group ol li::marker {
+  	counter-reset: li;
+	padding-left: 2.5rem;
+	padding: .25rem 0 .25rem 2.75rem;
+}
+.list-group ol {
+  list-style-type: none;
+  counter-reset: ordered;
+  margin-left: 20px;
+}
+
+.list-group ol li {
+  	position:relative;
+	margin-bottom:2rem;
+	padding-left:3.5rem;
+}
+
+.list-group ol li::before {
+  	border-radius: 0.5rem;
+  	color: var(--number-text,#fff);
+ 	content: counter(ordered);
+  	counter-increment: ordered;
+  	display: flex;
+	justify-content:center;
+	align-items:center;
+	width:3rem;
+	height:3rem;
+  	font-weight: 400;
+	left:0;
+	top:50%;
+	transform:translateY(-50%);
+  	position: absolute;
+  	background: var(--number-background,#ccd5e1);
+}
+
+.list-group.with-zero ol li:nth-child(-n+9)::before {
+  	content: "0" counter(ordered);
+  	counter-increment: ordered;
+}
+
+.block__information ul li{
+	list-style-type: none;
+}
+.block__information ul li::before {
+    content: '☑️';
+    display: inline-block;
+    width: 0.5rem; 
+    height: 0.5rem; 
+    object-fit: contain;
+	margin-right: 1rem;
+}
+
+.sc_button{
+	width: fit-content;
+    padding: 1rem;
+    background: var(--background);
+    color: var(--color);
+	border-radius: 0.625rem;
+}
+.sc_button br {
+	display: none;
+}
+
+.group__pros__cons{
+	display: flex;
+	margin-left:4rem;
+}
+.group__pros__cons .pros__list{
+	margin-right: 3rem;
+}
+.group__pros__cons .pros__list,
+.group__pros__cons .cons__list{
+	width:20rem;
+	border-radius: 0.5rem;
+	background: #E3E8F0;
+	
+}
+.group__pros__cons .cons__list ul,
+.group__pros__cons .pros__list ul {
+	padding:1rem 1.7rem 1rem 3.6rem;
+	list-style-type: none;
+	color: #9DA3AF;
+}
+.group__pros__cons .cons__list ul li,
+.group__pros__cons .pros__list ul li {
+	position:relative;
+	margin-bottom: 0.7rem;
+	line-height: 1.5;
+}
+
+.group__pros__cons .cons__list ul li::before{
+	content:"-";
+	background: var(--background);
+	color: var(--color);
+}	
+.group__pros__cons .pros__list ul li::before{
+	content:"+";
+	background: var(--background);
+	color: var(--color);
+}	
+.group__pros__cons .pros__list ul li::before,
+.group__pros__cons .cons__list ul li::before{
+	position: absolute;
+	left: -1.5rem;
+	top: 0.2rem;
+	width: 1rem;
+	height: 0.9rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	border-radius: 2px;
+	font-size: 1rem;
+	padding-top: 2px;
+	
+}
+.pros__title,.cons__title{
+	text-transform: uppercase;
+	border-radius: 0.5rem 0.5rem 0 0;
+	padding:1rem 2.2rem;
+	background: var(--background);
+    color: var(--color);
+	font-weight: 600
+	
+}
+.block__information {
+	width: 41.5rem;
+	background: #F2F5F9;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	color: #3e3e3e;
+}
+.block__information .block__info__title{
+	background: #3B67ED;
+	color: #fff;
+	padding: 1.5rem 2rem;
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+	letter-spacing: 0.05rem;
+}
+.block__information p{
+	padding: 0 2rem;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+.block__information ul {
+	padding: 1rem 3.5rem 1.5rem;
+	font-size: 1rem;
+}
+.block__information ul li {
+	margin-bottom: 0.5rem;
+	position: relative;
+}
+.block__information ul li::before{
+	content: "\2713";
+	width: 1rem;
+	height:1rem;
+	background: #3B67ED;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 1;
+	position: absolute;
+	left: -1.5rem;
+	color: #fff;
+	border-radius: 100%;
+	font-size:0.6125rem;
+}

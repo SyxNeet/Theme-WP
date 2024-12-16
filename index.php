@@ -1,1 +1,1 @@
-<?php echo  get_the_content(); ?>
+<?= get_the_content(); ?>

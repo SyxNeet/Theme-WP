@@ -6,6 +6,8 @@ require get_theme_file_path('/import-assets/import-css-js.php');
 require get_theme_file_path('/inc/ajax.php');
 require get_theme_file_path('/inc/api.php');
 require get_theme_file_path('/inc/shortcodes.php');
+require get_theme_file_path('/inc/constants.php');
+
 
 // add_action( 'phpmailer_init', function( $phpmailer ) {
 //     if ( !is_object( $phpmailer ) )

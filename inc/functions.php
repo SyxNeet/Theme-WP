@@ -3,7 +3,7 @@
 function set_default_featured_image($html, $post_id, $post_thumbnail_id, $size, $attr)
 {
     if (empty($post_thumbnail_id)) {
-        $html =  wp_get_attachment_image(1205, 'medium');
+        $html =  wp_get_attachment_image(DEFAULT_IMAGE_POST, 'medium');
     }
     return $html;
 }
@@ -13,7 +13,7 @@ add_filter('post_thumbnail_html', 'set_default_featured_image', 10, 5);
 function set_default_featured_image_url($url, $post_id)
 {
     if (empty(get_post_thumbnail_id($post_id))) {
-        $url = wp_get_attachment_image_url(1205, 'medium');
+        $url = wp_get_attachment_image_url(DEFAULT_IMAGE_POST, 'medium');
     }
     return $url;
 }
@@ -21,7 +21,14 @@ add_filter('default_post_thumbnail_url', 'set_default_featured_image_url', 10, 2
 
 $page_template = [
     30136 => 'template-render/page-affiliate-marketing',
-    18823 => 'template-render/front-page'
+    18823 => 'template-render/front-page',
+    30539 => 'template-render/beauty-health',
+    31025 => 'template-render/page-refersion',
+    // 	33525 => 'template-render/Round6/page-lifetime-commissions'
+    // 	33492 => 'template-render/Round6/page-mlm',
+    // 	33416 => 'template-render/Round6/page-recurring-commissions'
+    // 	32326 => 'template-render/Round3/page-getting-started'
+    //     32496 => 'template-render/Round5/page-smart-commission'
 ];
 
 function update_data($data)

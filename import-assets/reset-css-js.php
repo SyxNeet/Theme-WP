@@ -16,21 +16,21 @@ add_action('wp_enqueue_scripts', function () {
 add_filter('should_load_separate_core_block_assets', '__return_true');
 
 //* Loại bỏ Query String trong WordPress
-function remove_query_strings()
-{
-    if (!is_admin()) {
-        add_filter('script_loader_src', 'remove_query_strings_split', 15);
-        add_filter('style_loader_src', 'remove_query_strings_split', 15);
-    }
-}
+// function remove_query_strings()
+// {
+//     if (!is_admin()) {
+//         add_filter('script_loader_src', 'remove_query_strings_split', 15);
+//         add_filter('style_loader_src', 'remove_query_strings_split', 15);
+//     }
+// }
 
-function remove_query_strings_split($src)
-{
-    $output = preg_split("/(&ver|\?ver)/", $src);
-    return $output[0];
-}
+// function remove_query_strings_split($src)
+// {
+//     $output = preg_split("/(&ver|\?ver)/", $src);
+//     return $output[0];
+// }
 
-add_action('init', 'remove_query_strings');
+// add_action('init', 'remove_query_strings');
 
 
 function custom_dequeue_styles()

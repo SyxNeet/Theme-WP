@@ -1,0 +1,215 @@
+<?php
+// =========================================== version ========================================
+define('VERSION', time());
+// define('VERSION', wp_get_theme()->get('Version'));
+define('DIAMOND', 30324);
+define('SHOPIFY', 31647);
+define('CAPTERRA', 33044);
+define('STAR5', 30328);
+define('STAR1', 32194);
+define('BOX_IMAGE_MOBILE', 31646);
+define('ARROW_BLUE', 30542);
+define('ARROW_WHITE', 32196);
+define('BG_GET_STARTED_MB',34462);
+define('BG_GET_STARTED_PC',34467);
+// SECTION CUSTOMER WORDS
+define('CUSTOMER_WORD_DECO_LEFT', 30130);
+define('CUSTOMER_WORD_DECO_RIGHT', 30131);
+define('CUSTOMER_WORD_DECO_BOTTOM', 30132);
+define('CUSTOMER_WORD_CARD_BLUE', 30755);
+define('CUSTOMER_WORD_STAR', 30128);
+
+// HEADER MENU
+define('HEADER_FEATURE_BG', 32392);
+define('HEADER_MENU_ICON', 30908);
+define('HEADER_DROPDOWN_ICON', 30910);
+
+// HOMEPAGE
+define('PRICING_PLAN_BADGE_MB', 30826);
+define('HOMEPAGE_BG_EARTH_MB', 30831);
+define('HOMEPAGE_BG_MULTI_PURPOSE', 30470);
+
+// SECTION TABLE R2
+define('COMPARATION_TABLE_BG_PC', 31005);
+define('COMPARATION_TABLE_BG_MB', 31658);
+define('COMPARATION_ICON_GREEN', 31004);
+define('COMPARATION_ICON_RED', 31154);
+
+// INFLUENCER R2
+define('INFLUENCE_SOLUTIONS_BG', 31216);
+define('INFLUENCE_CLIENT_BG', 31218);
+
+// BEAUTY HEALTH
+define('BEAUTY_HEALTH_ICON_QUOTE', 31980);
+
+// FASHION
+define('FASHION_ICON_QUOTE', 32046);
+
+// HOME TOOL
+define('HOME_TOOL_ICON_QUOTE', 32072);
+// SPORTS
+define('SPORTS_ICON_QUOTE', 32181);
+
+// REFERRAL MARKETING
+define('REFERRAL_MARKETING_BG', 32265);
+define('REFERRAL_MARKETING_BG_ITEM_PC', 32267);
+define('REFERRAL_MARKETING_BG_ITEM_MB', 32268);
+
+// FEATURE PAGE
+define('FEATURE_PAGE_BG_PC', 32778);
+define('FEATURE_PAGE_BG_MB', 32777);
+
+// SMART COMMISSION
+define('SMART_COMMISSION_BG_MB', 32881);
+define('SMART_COMMISSION_BG_PC', 32490);
+
+
+// ================================ ICON ================================
+
+define('ICON_ARROW_LEFT', 30542);
+define('ICON_CLOSE', 30906);
+define('ICON_CHECK', 30310);
+define('ICON_ARROW_45DEG', 31204);
+define('ICON_ARROW_45DEG_BLUE2', 34735);
+define('ICON_ARROW_90DEG', 31205);
+define('ICON_ARROW_45DEG_BLUE', 32221);
+define('ICON_QUOTE_GREEN',32181);
+define('ICON_QUOTE_BLUE',34673);
+
+
+// ================================ CARD PRICING ================================
+define('CARD_PRICING_ACTIVE', 31202);
+define('CARD_PRICING_DEFAULT', 31206);
+
+// ================== CUSTOMER SUCCESS =====================
+define('CUSTOMER_SUCCESS_DEFAULT_POST', 32024);
+define('CUSTOMER_SUCCESS_DEFAULT_LOGO', 32220);
+define('CUSTOMER_SUCCESS_BG_SLIDE', 32219);
+
+// ================== PAGE AUTHOR R4 ==================
+
+define('AUTHOR_ARTICLE_DEFAULT', 31773);
+define('AUTHOR_ARTICLE_BG', 31781);
+define('AUTHOR_ICON_LINKEDIN', 31771);
+define('AUTHOR_ICON_MAIL', 31770);
+define('AUTHOR_INFO_BG', 31772);
+
+// PAGE ROADMAP R8
+define('BACKGROUND_CARD_ITEM',34206);
+// PAGE PRICING
+// <?php
+// =========================================== version ========================================
+define('VERSION', time());
+// define('VERSION', wp_get_theme()->get('Version'));
+define('DIAMOND', 30324);
+define('SHOPIFY', 31647);
+define('CAPTERRA', 33044);
+define('STAR5', 30328);
+define('STAR1', 32194);
+define('BOX_IMAGE_MOBILE', 31646);
+define('ARROW_BLUE', 30542);
+define('ARROW_WHITE', 32196);
+define('BG_GET_STARTED_MB',34462);
+define('BG_GET_STARTED_PC',34467);
+// SECTION CUSTOMER WORDS
+define('CUSTOMER_WORD_DECO_LEFT', 30130);
+define('CUSTOMER_WORD_DECO_RIGHT', 30131);
+define('CUSTOMER_WORD_DECO_BOTTOM', 30132);
+define('CUSTOMER_WORD_CARD_BLUE', 30755);
+define('CUSTOMER_WORD_STAR', 30128);
+
+// HEADER MENU
+define('HEADER_FEATURE_BG', 32392);
+define('HEADER_MENU_ICON', 30908);
+define('HEADER_DROPDOWN_ICON', 30910);
+
+// HOMEPAGE
+define('PRICING_PLAN_BADGE_MB', 30826);
+define('HOMEPAGE_BG_EARTH_MB', 30831);
+define('HOMEPAGE_BG_MULTI_PURPOSE', 30470);
+
+// SECTION TABLE R2
+define('COMPARATION_TABLE_BG_PC', 31005);
+define('COMPARATION_TABLE_BG_MB', 31658);
+define('COMPARATION_ICON_GREEN', 31004);
+define('COMPARATION_ICON_RED', 31154);
+
+// INFLUENCER R2
+define('INFLUENCE_SOLUTIONS_BG', 31216);
+define('INFLUENCE_CLIENT_BG', 31218);
+
+// BEAUTY HEALTH
+define('BEAUTY_HEALTH_ICON_QUOTE', 31980);
+
+// FASHION
+define('FASHION_ICON_QUOTE', 32046);
+
+// HOME TOOL
+define('HOME_TOOL_ICON_QUOTE', 32072);
+// SPORTS
+define('SPORTS_ICON_QUOTE', 32181);
+
+// REFERRAL MARKETING
+define('REFERRAL_MARKETING_BG', 32265);
+define('REFERRAL_MARKETING_BG_ITEM_PC', 32267);
+define('REFERRAL_MARKETING_BG_ITEM_MB', 32268);
+
+// FEATURE PAGE
+define('FEATURE_PAGE_BG_PC', 32778);
+define('FEATURE_PAGE_BG_MB', 32777);
+
+// SMART COMMISSION
+define('SMART_COMMISSION_BG_MB', 32881);
+define('SMART_COMMISSION_BG_PC', 32490);
+
+
+// ================================ ICON ================================
+
+define('ICON_ARROW_LEFT', 30542);
+define('ICON_CLOSE', 30906);
+define('ICON_CHECK', 30310);
+define('ICON_ARROW_45DEG', 31204);
+define('ICON_ARROW_45DEG_BLUE2', 34735);
+define('ICON_ARROW_90DEG', 31205);
+define('ICON_ARROW_45DEG_BLUE', 32221);
+define('ICON_QUOTE_GREEN',32181);
+define('ICON_QUOTE_BLUE',34673);
+
+
+// ================================ CARD PRICING ================================
+define('CARD_PRICING_ACTIVE', 31202);
+define('CARD_PRICING_DEFAULT', 31206);
+
+// ================== CUSTOMER SUCCESS =====================
+define('CUSTOMER_SUCCESS_DEFAULT_POST', 32024);
+define('CUSTOMER_SUCCESS_DEFAULT_LOGO', 32220);
+define('CUSTOMER_SUCCESS_BG_SLIDE', 32219);
+
+// ================== PAGE AUTHOR R4 ==================
+
+define('AUTHOR_ARTICLE_DEFAULT', 31773);
+define('AUTHOR_ARTICLE_BG', 31781);
+define('AUTHOR_ICON_LINKEDIN', 31771);
+define('AUTHOR_ICON_MAIL', 31770);
+define('AUTHOR_INFO_BG', 31772);
+
+// PAGE ROADMAP R8
+define('BACKGROUND_CARD_ITEM',34206);
+// PAGE AFFILIATE PROGRAM DIRECTORY
+define('GLASS_SEARCH',35117);
+define('UNCHECK',35112);
+define('CHECKED',35113);
+define('CLOSE_DIRECTORY',35114);
+define('DOWN_DIRECTORY',35115);
+define('FILTER_DIRECTORY',35116);
+define('PAGINATION_ICON',35119);
+
+// PAGE PRICING
+define('ARROW_GREEN', 34875);
+define('BG_TRIANGLE', 34877);
+define('CHECK_PRICING', 34878);
+define('ARROW_ACCOR', 34879);
+define('ICON_CLOSE_PRICING', 34880);
+define('ICON_OPEN_PRICING', 34881);
+define('ICON_CLOSE_PRICING_MB', 35314);
+define('ICON_OPEN_PRICING_MB', 35315);
